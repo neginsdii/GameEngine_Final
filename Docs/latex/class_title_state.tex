@@ -1,0 +1,134 @@
+\hypertarget{class_title_state}{}\doxysection{Title\+State Class Reference}
+\label{class_title_state}\index{TitleState@{TitleState}}
+
+
+{\ttfamily \#include $<$Title\+State.\+hpp$>$}
+
+
+
+Inheritance diagram for Title\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{class_title_state__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Title\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_title_state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_title_state_aad68d2a0aece65492974d3ee448ff71f}{Title\+State}} (\mbox{\hyperlink{class_state_stack}{State\+Stack}} $\ast$stack, \mbox{\hyperlink{struct_state_1_1_context}{Context}} $\ast$context)
+\begin{DoxyCompactList}\small\item\em Constructor(Initializes the variables of the class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_title_state_ae12beafe5aad6929a56089942de1220e}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws the title scene. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_title_state_a26db23a9e13dcd488d0a550024aa67a0}{update}} (const \mbox{\hyperlink{class_game_timer}{Game\+Timer}} \&gt)
+\begin{DoxyCompactList}\small\item\em updates the scene accordingly \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_title_state_af599217999e2373896f4441dcfb4b78b}{handle\+Event}} (WPARAM btn\+State)
+\begin{DoxyCompactList}\small\item\em handles any input by player(if any key pressed -\/$>$ go to menu) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_title_state_aad68d2a0aece65492974d3ee448ff71f}\label{class_title_state_aad68d2a0aece65492974d3ee448ff71f}} 
+\index{TitleState@{TitleState}!TitleState@{TitleState}}
+\index{TitleState@{TitleState}!TitleState@{TitleState}}
+\doxysubsubsection{\texorpdfstring{TitleState()}{TitleState()}}
+{\footnotesize\ttfamily Title\+State\+::\+Title\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state_stack}{State\+Stack}} $\ast$}]{stack,  }\item[{\mbox{\hyperlink{struct_state_1_1_context}{Context}} $\ast$}]{context }\end{DoxyParamCaption})}
+
+
+
+Constructor(Initializes the variables of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em State\+Stack$\ast$} & stack, Context$\ast$ context \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_title_state_ae12beafe5aad6929a56089942de1220e}\label{class_title_state_ae12beafe5aad6929a56089942de1220e}} 
+\index{TitleState@{TitleState}!draw@{draw}}
+\index{draw@{draw}!TitleState@{TitleState}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Title\+State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draws the title scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_state_ae261605bc40b7e3959ce5df5457e4942}{State}}.
+
+\mbox{\Hypertarget{class_title_state_af599217999e2373896f4441dcfb4b78b}\label{class_title_state_af599217999e2373896f4441dcfb4b78b}} 
+\index{TitleState@{TitleState}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!TitleState@{TitleState}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily bool Title\+State\+::handle\+Event (\begin{DoxyParamCaption}\item[{WPARAM}]{btn\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+handles any input by player(if any key pressed -\/$>$ go to menu) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em WPARAM} & btn\+State \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_state_a3b119f64a399bd17bf37c377a094906a}{State}}.
+
+\mbox{\Hypertarget{class_title_state_a26db23a9e13dcd488d0a550024aa67a0}\label{class_title_state_a26db23a9e13dcd488d0a550024aa67a0}} 
+\index{TitleState@{TitleState}!update@{update}}
+\index{update@{update}!TitleState@{TitleState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool Title\+State\+::update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_timer}{Game\+Timer}} \&}]{gt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+updates the scene accordingly 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \mbox{\hyperlink{class_game_timer}{Game\+Timer}}\& gt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_state_a3edbdcd142b9da8470d1f7d3fbe74e83}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Engine-\/\+Final\+Project/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_title_state_8hpp}{Title\+State.\+hpp}}\item 
+Game\+Engine-\/\+Final\+Project/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_title_state_8cpp}{Title\+State.\+cpp}}\end{DoxyCompactItemize}

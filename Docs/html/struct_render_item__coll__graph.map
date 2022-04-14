@@ -1,0 +1,5 @@
+<map id="RenderItem" name="RenderItem">
+<area shape="rect" id="node1" title=" " alt="" coords="51,95,139,121"/>
+<area shape="rect" id="node2" href="$struct_material.html" title=" " alt="" coords="5,5,73,32"/>
+<area shape="rect" id="node3" href="$struct_mesh_geometry.html" title=" " alt="" coords="97,5,208,32"/>
+</map>

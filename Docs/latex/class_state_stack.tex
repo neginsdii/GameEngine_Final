@@ -1,0 +1,252 @@
+\hypertarget{class_state_stack}{}\doxysection{State\+Stack Class Reference}
+\label{class_state_stack}\index{StateStack@{StateStack}}
+
+
+{\ttfamily \#include $<$State\+Stack.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_state_stack_af804142a55cd477767353e0abbcc218c}{Action}} \{ \mbox{\hyperlink{class_state_stack_af804142a55cd477767353e0abbcc218ca5145d891d6770f76760d0b17cdfec0ab}{Push}}
+, \mbox{\hyperlink{class_state_stack_af804142a55cd477767353e0abbcc218cada9c92031672d7627190e17bf881889a}{Pop}}
+, \mbox{\hyperlink{class_state_stack_af804142a55cd477767353e0abbcc218cad2ef458a00c740b8bf761d90da84bc89}{Clear}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_state_stack_a365f29afd04a9370f6638cbe3b4ff92a}{State\+Stack}} (\mbox{\hyperlink{struct_state_1_1_context}{State\+::\+Context}} context)
+\begin{DoxyCompactList}\small\item\em Constructor(Initializes the variables of the class. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_state_stack_a9d64daa479c2cccad6f2ede77741a352}{register\+State}} (\mbox{\hyperlink{namespace_states_a571a0dc62822f97bb9511eb013d8e1c3}{States\+::\+ID}} state\+ID)
+\item 
+void \mbox{\hyperlink{class_state_stack_a22c2b84575447cdcfe7fef102cb90847}{update}} (const \mbox{\hyperlink{class_game_timer}{Game\+Timer}} \&gt)
+\begin{DoxyCompactList}\small\item\em Iterate from top to bottom, stop as soon as \mbox{\hyperlink{class_state_stack_a22c2b84575447cdcfe7fef102cb90847}{update()}} returns false. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_state_stack_a0990b973b2a0bdf8fad2f326e564931a}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draw all active states from bottom to top. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_state_stack_a2a6df2bdf1d3edfb12f09fbb1dfbf67d}{handle\+Event}} (WPARAM btn\+State)
+\begin{DoxyCompactList}\small\item\em Iterate from top to bottom, stop as soon as \mbox{\hyperlink{class_state_stack_a2a6df2bdf1d3edfb12f09fbb1dfbf67d}{handle\+Event()}} returns false. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_state_stack_a80ed85f0fc13039e6f4c7dfef19e608f}{push\+State}} (\mbox{\hyperlink{namespace_states_a571a0dc62822f97bb9511eb013d8e1c3}{States\+::\+ID}} state\+ID)
+\begin{DoxyCompactList}\small\item\em pushes the next state to the pending\+List \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_state_stack_a7e050a57b798295c2344f1318765b5ee}{pop\+State}} ()
+\begin{DoxyCompactList}\small\item\em pops the last state from the pending\+List \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_state_stack_a49f0703d4037c3bf63494e64cb09898d}{clear\+States}} ()
+\begin{DoxyCompactList}\small\item\em clears the pending\+List \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_state_stack_a4d9dc16e1a69640b6a85c224fe1c3f33}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Checks to see if stack is empty. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_state_a71d9930be1a58be7f711e245b7965d48}{State\+::\+Ptr}} $>$ $\ast$ \mbox{\hyperlink{class_state_stack_a0ac721da5ae23e27a29a4962dce091b3}{Get\+State\+Stack}} ()
+\begin{DoxyCompactList}\small\item\em returns the stack \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_state_a71d9930be1a58be7f711e245b7965d48}{State\+::\+Ptr}} $>$ \mbox{\hyperlink{class_state_stack_af56e0396b962c8f2bb5d11ae1b58f357}{m\+Stack}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_state_stack_af804142a55cd477767353e0abbcc218c}\label{class_state_stack_af804142a55cd477767353e0abbcc218c}} 
+\index{StateStack@{StateStack}!Action@{Action}}
+\index{Action@{Action}!StateStack@{StateStack}}
+\doxysubsubsection{\texorpdfstring{Action}{Action}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_state_stack_af804142a55cd477767353e0abbcc218c}{State\+Stack\+::\+Action}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Push@{Push}!StateStack@{StateStack}}\index{StateStack@{StateStack}!Push@{Push}}}\mbox{\Hypertarget{class_state_stack_af804142a55cd477767353e0abbcc218ca5145d891d6770f76760d0b17cdfec0ab}\label{class_state_stack_af804142a55cd477767353e0abbcc218ca5145d891d6770f76760d0b17cdfec0ab}} 
+Push&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pop@{Pop}!StateStack@{StateStack}}\index{StateStack@{StateStack}!Pop@{Pop}}}\mbox{\Hypertarget{class_state_stack_af804142a55cd477767353e0abbcc218cada9c92031672d7627190e17bf881889a}\label{class_state_stack_af804142a55cd477767353e0abbcc218cada9c92031672d7627190e17bf881889a}} 
+Pop&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Clear@{Clear}!StateStack@{StateStack}}\index{StateStack@{StateStack}!Clear@{Clear}}}\mbox{\Hypertarget{class_state_stack_af804142a55cd477767353e0abbcc218cad2ef458a00c740b8bf761d90da84bc89}\label{class_state_stack_af804142a55cd477767353e0abbcc218cad2ef458a00c740b8bf761d90da84bc89}} 
+Clear&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_state_stack_a365f29afd04a9370f6638cbe3b4ff92a}\label{class_state_stack_a365f29afd04a9370f6638cbe3b4ff92a}} 
+\index{StateStack@{StateStack}!StateStack@{StateStack}}
+\index{StateStack@{StateStack}!StateStack@{StateStack}}
+\doxysubsubsection{\texorpdfstring{StateStack()}{StateStack()}}
+{\footnotesize\ttfamily State\+Stack\+::\+State\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_state_1_1_context}{State\+::\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor(Initializes the variables of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em State\+Stack$\ast$} & stack, Context$\ast$ context \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_state_stack_a49f0703d4037c3bf63494e64cb09898d}\label{class_state_stack_a49f0703d4037c3bf63494e64cb09898d}} 
+\index{StateStack@{StateStack}!clearStates@{clearStates}}
+\index{clearStates@{clearStates}!StateStack@{StateStack}}
+\doxysubsubsection{\texorpdfstring{clearStates()}{clearStates()}}
+{\footnotesize\ttfamily void State\+Stack\+::clear\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+clears the pending\+List 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_state_stack_a0990b973b2a0bdf8fad2f326e564931a}\label{class_state_stack_a0990b973b2a0bdf8fad2f326e564931a}} 
+\index{StateStack@{StateStack}!draw@{draw}}
+\index{draw@{draw}!StateStack@{StateStack}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void State\+Stack\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw all active states from bottom to top. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_stack_a0ac721da5ae23e27a29a4962dce091b3}\label{class_state_stack_a0ac721da5ae23e27a29a4962dce091b3}} 
+\index{StateStack@{StateStack}!GetStateStack@{GetStateStack}}
+\index{GetStateStack@{GetStateStack}!StateStack@{StateStack}}
+\doxysubsubsection{\texorpdfstring{GetStateStack()}{GetStateStack()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_state_a71d9930be1a58be7f711e245b7965d48}{State\+::\+Ptr}} $>$ $\ast$ State\+Stack\+::\+Get\+State\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the stack 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+State\+::\+Ptr$>$$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_stack_a2a6df2bdf1d3edfb12f09fbb1dfbf67d}\label{class_state_stack_a2a6df2bdf1d3edfb12f09fbb1dfbf67d}} 
+\index{StateStack@{StateStack}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!StateStack@{StateStack}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily void State\+Stack\+::handle\+Event (\begin{DoxyParamCaption}\item[{WPARAM}]{btn\+State }\end{DoxyParamCaption})}
+
+
+
+Iterate from top to bottom, stop as soon as \mbox{\hyperlink{class_state_stack_a2a6df2bdf1d3edfb12f09fbb1dfbf67d}{handle\+Event()}} returns false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em WPARAM} & btn\+State \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_stack_a4d9dc16e1a69640b6a85c224fe1c3f33}\label{class_state_stack_a4d9dc16e1a69640b6a85c224fe1c3f33}} 
+\index{StateStack@{StateStack}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!StateStack@{StateStack}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool State\+Stack\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Checks to see if stack is empty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_stack_a7e050a57b798295c2344f1318765b5ee}\label{class_state_stack_a7e050a57b798295c2344f1318765b5ee}} 
+\index{StateStack@{StateStack}!popState@{popState}}
+\index{popState@{popState}!StateStack@{StateStack}}
+\doxysubsubsection{\texorpdfstring{popState()}{popState()}}
+{\footnotesize\ttfamily void State\+Stack\+::pop\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+pops the last state from the pending\+List 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{namespace_states_a571a0dc62822f97bb9511eb013d8e1c3}{States\+::\+ID}}} & state\+ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_stack_a80ed85f0fc13039e6f4c7dfef19e608f}\label{class_state_stack_a80ed85f0fc13039e6f4c7dfef19e608f}} 
+\index{StateStack@{StateStack}!pushState@{pushState}}
+\index{pushState@{pushState}!StateStack@{StateStack}}
+\doxysubsubsection{\texorpdfstring{pushState()}{pushState()}}
+{\footnotesize\ttfamily void State\+Stack\+::push\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_states_a571a0dc62822f97bb9511eb013d8e1c3}{States\+::\+ID}}}]{state\+ID }\end{DoxyParamCaption})}
+
+
+
+pushes the next state to the pending\+List 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{namespace_states_a571a0dc62822f97bb9511eb013d8e1c3}{States\+::\+ID}}} & state\+ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_stack_a9d64daa479c2cccad6f2ede77741a352}\label{class_state_stack_a9d64daa479c2cccad6f2ede77741a352}} 
+\index{StateStack@{StateStack}!registerState@{registerState}}
+\index{registerState@{registerState}!StateStack@{StateStack}}
+\doxysubsubsection{\texorpdfstring{registerState()}{registerState()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void State\+Stack\+::register\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_states_a571a0dc62822f97bb9511eb013d8e1c3}{States\+::\+ID}}}]{state\+ID }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_state_stack_a22c2b84575447cdcfe7fef102cb90847}\label{class_state_stack_a22c2b84575447cdcfe7fef102cb90847}} 
+\index{StateStack@{StateStack}!update@{update}}
+\index{update@{update}!StateStack@{StateStack}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void State\+Stack\+::update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_timer}{Game\+Timer}} \&}]{gt }\end{DoxyParamCaption})}
+
+
+
+Iterate from top to bottom, stop as soon as \mbox{\hyperlink{class_state_stack_a22c2b84575447cdcfe7fef102cb90847}{update()}} returns false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \mbox{\hyperlink{class_game_timer}{Game\+Timer}}\& gt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_state_stack_af56e0396b962c8f2bb5d11ae1b58f357}\label{class_state_stack_af56e0396b962c8f2bb5d11ae1b58f357}} 
+\index{StateStack@{StateStack}!mStack@{mStack}}
+\index{mStack@{mStack}!StateStack@{StateStack}}
+\doxysubsubsection{\texorpdfstring{mStack}{mStack}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_state_a71d9930be1a58be7f711e245b7965d48}{State\+::\+Ptr}}$>$ State\+Stack\+::m\+Stack}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Engine-\/\+Final\+Project/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_state_stack_8hpp}{State\+Stack.\+hpp}}\item 
+Game\+Engine-\/\+Final\+Project/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_state_stack_8cpp}{State\+Stack.\+cpp}}\end{DoxyCompactItemize}

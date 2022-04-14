@@ -1,0 +1,146 @@
+\hypertarget{class_aircraft}{}\doxysection{Aircraft Class Reference}
+\label{class_aircraft}\index{Aircraft@{Aircraft}}
+
+
+{\ttfamily \#include $<$Aircraft.\+hpp$>$}
+
+
+
+Inheritance diagram for Aircraft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{class_aircraft__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Aircraft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_aircraft__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5}{Body\+Type}} \{ \newline
+\mbox{\hyperlink{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5aa4f22607c97e347805c327992f78ae88}{Body}}
+, \mbox{\hyperlink{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5a4d1e700ff826fdefa43100a64c795057}{Head}}
+, \mbox{\hyperlink{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5a85c92ea0b8a4090d2c3ccbf126740108}{Tale}}
+, \mbox{\hyperlink{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5a86fbdbf345f5e5411f274c596efa11c5}{Left\+Wing}}
+, \newline
+\mbox{\hyperlink{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5abe91a65857498d98365cd22a8c1d6ba4}{Right\+Wing}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_aircraft_a4517a8fd428423dbd6f552be66fef0e9}{Aircraft\+Type}} \{ \mbox{\hyperlink{class_aircraft_a4517a8fd428423dbd6f552be66fef0e9aed1ed20dae2d2d8eaa1d2186c6ee9315}{Eagle}}
+, \mbox{\hyperlink{class_aircraft_a4517a8fd428423dbd6f552be66fef0e9af080b57c0c515dea65f056395cc6d59b}{Raptor}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_aircraft_a9bd780d0003199498ead06d733d62873}{Aircraft}} (\mbox{\hyperlink{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5}{Body\+Type}} type, \mbox{\hyperlink{class_aircraft_a4517a8fd428423dbd6f552be66fef0e9}{Aircraft\+Type}} aircraft\+Type, \mbox{\hyperlink{class_state}{State}} $\ast$state)
+\item 
+virtual unsigned int \mbox{\hyperlink{class_aircraft_a01f9042934c08ef18b62351e6bca320d}{get\+Category}} () const
+\item 
+void \mbox{\hyperlink{class_aircraft_afffdeea0c326c9f6adb0a9d92daf6d91}{Create\+Airplane}} ()
+\begin{DoxyCompactList}\small\item\em Creates all parts of aircraft. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_aircraft_a4517a8fd428423dbd6f552be66fef0e9}\label{class_aircraft_a4517a8fd428423dbd6f552be66fef0e9}} 
+\index{Aircraft@{Aircraft}!AircraftType@{AircraftType}}
+\index{AircraftType@{AircraftType}!Aircraft@{Aircraft}}
+\doxysubsubsection{\texorpdfstring{AircraftType}{AircraftType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_aircraft_a4517a8fd428423dbd6f552be66fef0e9}{Aircraft\+::\+Aircraft\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Eagle@{Eagle}!Aircraft@{Aircraft}}\index{Aircraft@{Aircraft}!Eagle@{Eagle}}}\mbox{\Hypertarget{class_aircraft_a4517a8fd428423dbd6f552be66fef0e9aed1ed20dae2d2d8eaa1d2186c6ee9315}\label{class_aircraft_a4517a8fd428423dbd6f552be66fef0e9aed1ed20dae2d2d8eaa1d2186c6ee9315}} 
+Eagle&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Raptor@{Raptor}!Aircraft@{Aircraft}}\index{Aircraft@{Aircraft}!Raptor@{Raptor}}}\mbox{\Hypertarget{class_aircraft_a4517a8fd428423dbd6f552be66fef0e9af080b57c0c515dea65f056395cc6d59b}\label{class_aircraft_a4517a8fd428423dbd6f552be66fef0e9af080b57c0c515dea65f056395cc6d59b}} 
+Raptor&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5}\label{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5}} 
+\index{Aircraft@{Aircraft}!BodyType@{BodyType}}
+\index{BodyType@{BodyType}!Aircraft@{Aircraft}}
+\doxysubsubsection{\texorpdfstring{BodyType}{BodyType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5}{Aircraft\+::\+Body\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Body@{Body}!Aircraft@{Aircraft}}\index{Aircraft@{Aircraft}!Body@{Body}}}\mbox{\Hypertarget{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5aa4f22607c97e347805c327992f78ae88}\label{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5aa4f22607c97e347805c327992f78ae88}} 
+Body&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Head@{Head}!Aircraft@{Aircraft}}\index{Aircraft@{Aircraft}!Head@{Head}}}\mbox{\Hypertarget{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5a4d1e700ff826fdefa43100a64c795057}\label{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5a4d1e700ff826fdefa43100a64c795057}} 
+Head&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Tale@{Tale}!Aircraft@{Aircraft}}\index{Aircraft@{Aircraft}!Tale@{Tale}}}\mbox{\Hypertarget{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5a85c92ea0b8a4090d2c3ccbf126740108}\label{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5a85c92ea0b8a4090d2c3ccbf126740108}} 
+Tale&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftWing@{LeftWing}!Aircraft@{Aircraft}}\index{Aircraft@{Aircraft}!LeftWing@{LeftWing}}}\mbox{\Hypertarget{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5a86fbdbf345f5e5411f274c596efa11c5}\label{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5a86fbdbf345f5e5411f274c596efa11c5}} 
+Left\+Wing&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightWing@{RightWing}!Aircraft@{Aircraft}}\index{Aircraft@{Aircraft}!RightWing@{RightWing}}}\mbox{\Hypertarget{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5abe91a65857498d98365cd22a8c1d6ba4}\label{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5abe91a65857498d98365cd22a8c1d6ba4}} 
+Right\+Wing&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_aircraft_a9bd780d0003199498ead06d733d62873}\label{class_aircraft_a9bd780d0003199498ead06d733d62873}} 
+\index{Aircraft@{Aircraft}!Aircraft@{Aircraft}}
+\index{Aircraft@{Aircraft}!Aircraft@{Aircraft}}
+\doxysubsubsection{\texorpdfstring{Aircraft()}{Aircraft()}}
+{\footnotesize\ttfamily Aircraft\+::\+Aircraft (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_aircraft_a3dfb9c3c4cc7a29f7bc911ce06b1a2c5}{Body\+Type}}}]{type,  }\item[{\mbox{\hyperlink{class_aircraft_a4517a8fd428423dbd6f552be66fef0e9}{Aircraft\+Type}}}]{aircraft\+Type,  }\item[{\mbox{\hyperlink{class_state}{State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+
+
+\mbox{\hyperlink{class_aircraft}{Aircraft}} constructor, sets the sprite based on the type of the aircraft
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_aircraft_afffdeea0c326c9f6adb0a9d92daf6d91}\label{class_aircraft_afffdeea0c326c9f6adb0a9d92daf6d91}} 
+\index{Aircraft@{Aircraft}!CreateAirplane@{CreateAirplane}}
+\index{CreateAirplane@{CreateAirplane}!Aircraft@{Aircraft}}
+\doxysubsubsection{\texorpdfstring{CreateAirplane()}{CreateAirplane()}}
+{\footnotesize\ttfamily void Aircraft\+::\+Create\+Airplane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates all parts of aircraft. 
+
+Each part is an aircraft with different shapes And they are attached to this aircraft
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aircraft_a01f9042934c08ef18b62351e6bca320d}\label{class_aircraft_a01f9042934c08ef18b62351e6bca320d}} 
+\index{Aircraft@{Aircraft}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Aircraft@{Aircraft}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily unsigned int Aircraft\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_scene_node_af713a8c58831a27bc791a2efdfb7c495}{Scene\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Engine-\/\+Final\+Project/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_aircraft_8hpp}{Aircraft.\+hpp}}\item 
+Game\+Engine-\/\+Final\+Project/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_aircraft_8cpp}{Aircraft.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,168 @@
+\hypertarget{class_game_state}{}\doxysection{Game\+State Class Reference}
+\label{class_game_state}\index{GameState@{GameState}}
+
+
+{\ttfamily \#include $<$Game\+State.\+hpp$>$}
+
+
+
+Inheritance diagram for Game\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{class_game_state__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_state_a05f2b11b65c32912f95c06d68b8bd4c4}{Game\+State}} (\mbox{\hyperlink{class_state_stack}{State\+Stack}} $\ast$stack, \mbox{\hyperlink{struct_state_1_1_context}{Context}} $\ast$context)
+\begin{DoxyCompactList}\small\item\em Constructor(Initializes the variables of the class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_state_aaf255a97137afb613c3509da8f01aa06}{Process\+Input}} ()
+\begin{DoxyCompactList}\small\item\em handle any input by player \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_state_a3c511417d8934943ae65c04681f321a3}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws the world. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_game_state_ac0bea22df7996fa7dd05520ff46199de}{update}} (const \mbox{\hyperlink{class_game_timer}{Game\+Timer}} \&gt)
+\begin{DoxyCompactList}\small\item\em Calls process\+Input function to handle any input by player and updates the world accordingly. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_game_state_aebcbccf8a184f5444758320061ba5cc9}{handle\+Event}} (WPARAM btn\+State)
+\begin{DoxyCompactList}\small\item\em handles any input by player(if P pressed -\/$>$ pause the game\+\_\+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_node}{Scene\+Node}} $\ast$ \mbox{\hyperlink{class_game_state_a5f3c6c7a86e4ec1be9ea3b22005e760e}{m\+Pause\+Scene\+Graph}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_state_a05f2b11b65c32912f95c06d68b8bd4c4}\label{class_game_state_a05f2b11b65c32912f95c06d68b8bd4c4}} 
+\index{GameState@{GameState}!GameState@{GameState}}
+\index{GameState@{GameState}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{GameState()}{GameState()}}
+{\footnotesize\ttfamily Game\+State\+::\+Game\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state_stack}{State\+Stack}} $\ast$}]{stack,  }\item[{\mbox{\hyperlink{struct_state_1_1_context}{Context}} $\ast$}]{context }\end{DoxyParamCaption})}
+
+
+
+Constructor(Initializes the variables of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em State\+Stack$\ast$} & stack, Context$\ast$ context \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_state_a3c511417d8934943ae65c04681f321a3}\label{class_game_state_a3c511417d8934943ae65c04681f321a3}} 
+\index{GameState@{GameState}!draw@{draw}}
+\index{draw@{draw}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Game\+State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draws the world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_state_ae261605bc40b7e3959ce5df5457e4942}{State}}.
+
+\mbox{\Hypertarget{class_game_state_aebcbccf8a184f5444758320061ba5cc9}\label{class_game_state_aebcbccf8a184f5444758320061ba5cc9}} 
+\index{GameState@{GameState}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily bool Game\+State\+::handle\+Event (\begin{DoxyParamCaption}\item[{WPARAM}]{btn\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+handles any input by player(if P pressed -\/$>$ pause the game\+\_\+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em WPARAM} & btn\+State \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_state_a3b119f64a399bd17bf37c377a094906a}{State}}.
+
+\mbox{\Hypertarget{class_game_state_aaf255a97137afb613c3509da8f01aa06}\label{class_game_state_aaf255a97137afb613c3509da8f01aa06}} 
+\index{GameState@{GameState}!ProcessInput@{ProcessInput}}
+\index{ProcessInput@{ProcessInput}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{ProcessInput()}{ProcessInput()}}
+{\footnotesize\ttfamily void Game\+State\+::\+Process\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+handle any input by player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_state_ac0bea22df7996fa7dd05520ff46199de}\label{class_game_state_ac0bea22df7996fa7dd05520ff46199de}} 
+\index{GameState@{GameState}!update@{update}}
+\index{update@{update}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool Game\+State\+::update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_timer}{Game\+Timer}} \&}]{gt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calls process\+Input function to handle any input by player and updates the world accordingly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \mbox{\hyperlink{class_game_timer}{Game\+Timer}}\& gt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_state_a3edbdcd142b9da8470d1f7d3fbe74e83}{State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_state_a5f3c6c7a86e4ec1be9ea3b22005e760e}\label{class_game_state_a5f3c6c7a86e4ec1be9ea3b22005e760e}} 
+\index{GameState@{GameState}!mPauseSceneGraph@{mPauseSceneGraph}}
+\index{mPauseSceneGraph@{mPauseSceneGraph}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{mPauseSceneGraph}{mPauseSceneGraph}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_node}{Scene\+Node}}$\ast$ Game\+State\+::m\+Pause\+Scene\+Graph}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Engine-\/\+Final\+Project/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_game_state_8hpp}{Game\+State.\+hpp}}\item 
+Game\+Engine-\/\+Final\+Project/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\+Game\+Engine\+Development2\+\_\+\+Assignment1/\mbox{\hyperlink{_game_state_8cpp}{Game\+State.\+cpp}}\end{DoxyCompactItemize}

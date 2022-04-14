@@ -1,0 +1,8 @@
+<map id="State" name="State">
+<area shape="rect" id="node1" title=" " alt="" coords="258,95,311,121"/>
+<area shape="rect" id="node3" href="$class_scene_node.html" title=" " alt="" coords="172,184,261,211"/>
+<area shape="rect" id="node2" href="$class_state_stack.html" title=" " alt="" coords="241,5,328,32"/>
+<area shape="rect" id="node4" href="$struct_render_item.html" title=" " alt="" coords="90,95,178,121"/>
+<area shape="rect" id="node5" href="$struct_material.html" title=" " alt="" coords="5,5,73,32"/>
+<area shape="rect" id="node6" href="$struct_mesh_geometry.html" title=" " alt="" coords="97,5,208,32"/>
+</map>
