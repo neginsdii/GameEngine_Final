@@ -1,0 +1,5 @@
+/**
+@mainpage Final Assignment - Implementing TitleState, Menu State, Game State and Pause state
+@author [Negar Saeidi - 101261396] [Negin Saeidi - 101261395]
+*GameEngine with DirectX \n\n\n --------------------INSTRUCTIONS-------------------- \n - Aircrafts move with WASD and RF \n\n -R/F:Moves in Z direction \n - W/Up: moves up \n - S/Down: moves down \n - A/Left: moves left \n - D/Right: moves right
+\n * Transition from Title screen to Main Menu : Press any key \n * Transition from Main Menu to Game: Select play button \n * Transition from Game to Pause: Press P \n * Transition from Pause to Main menu: Press backspace \n * Resume the game: Press Q  */
